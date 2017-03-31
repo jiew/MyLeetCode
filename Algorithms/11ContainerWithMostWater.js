@@ -19,10 +19,10 @@ var maxArea = function(height) {
     if (maxA < area) {
       maxA = area;
     }
-    while (height[i] <= h) {
+    while (height[i] <= h && i < j) {
       i++;
     }
-    while (height[j] <= h) {
+    while (height[j] <= h && i < j) {
       j--;
     }
   }
